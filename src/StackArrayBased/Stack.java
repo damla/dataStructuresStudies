@@ -122,7 +122,7 @@ public class Stack {
 		
 // top method sometimes called as the peek() method. The stack must be not empty. Returns the top element of the stack.		
 	
-	assert(isEmpty()); //in assert, if the statement is false it will terminate so in this case, if the stack is empty, it will terminate.
+	assert(isEmpty()); //in assert, if the statement is true it will terminate so in this case, if the stack is empty, it will terminate.
 	
 	return stackArray[top-1]; //In the other case, it will return the top-1 because the last element's index is top-1.
 	
