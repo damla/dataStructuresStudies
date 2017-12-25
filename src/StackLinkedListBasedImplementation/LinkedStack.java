@@ -32,22 +32,23 @@ public class LinkedStack {
 	
 	public void push(int newElement) {
 		
-		Node newNode=new Node(newElement); //link is null
-		newNode.setLink(top); 
+		Node newNode=new Node(newElement,top); //link is top
 		top=newNode;
 		
 	}
 	
-	public int top() {
+	public void top() {
 // Demonstrates the top element.
 		
-		assert(top==null); //if the statement is true, it will terminate.
-		
-		return top.getInfo(); //gets the data of top element.
+		if(top==null) {
+		System.out.println("Stack is empty.");
+		}
+		else
+		System.out.println(top.getInfo()); //gets the data of top element.
 	}
 	
 	public boolean pop() {
-// Check if the list is empty or not, then delete the first element by changing tops link.		
+// Check if the l	ist is empty or not, then delete the first element by changing tops link.		
 		
 		if(isEmpty()) {
 			return false;
@@ -98,5 +99,16 @@ public class LinkedStack {
 		}
 		return count;
 
-	}		
+	}
 }
+/*Methods that we added:
+ * isEmpty
+ * initializeStack
+ * push
+ * pop
+ * top
+ * outputLinkedStack
+ * copyStack
+ * equals
+ * size
+ */
