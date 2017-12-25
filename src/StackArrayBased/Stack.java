@@ -190,3 +190,14 @@ public class Stack {
 	}
 
 }
+/* Methods that we added:
+ * initializeStack
+ * isEmpty
+ * isFull
+ * push
+ * pop
+ * top
+ * copyStack
+ * equals
+ * outputStack
+ */
